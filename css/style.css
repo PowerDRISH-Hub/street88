@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-    max-width: 1110px;
+    max-width: 1140px;
     padding: 0 15px;
     margin: 0 auto;
     width: 100%;
@@ -99,19 +99,31 @@ body {
 }
 
 .banner {
-    background: url(../img/bg.jpg)no-repeat center/cover;
+    background: url(../img/bg.jpg)no-repeat bottom center/cover;
     height: 100vh;
-
 }
 
 .banner__wrap {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
-    gap: 18px;
-    height: 100vh;
+    flex-direction: column;
+    height: 100%;
+
 }
+
+.banner__desc {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#banner__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
 
 .banner__h1 {
     font-family: "Raleway";
@@ -140,12 +152,7 @@ body {
     color: white;
 }
 
-.banner__links {
-    padding-top: 30px;
-    display: flex;
-    align-items: center;
-    gap: 538px;
-}
+
 
 .link__price {
     font-family: "Raleway";
@@ -155,7 +162,6 @@ body {
     color: white;
     background: rgba(105, 207, 23, 0.5);
     padding: 32px 75px;
-
 }
 
 .link__look {
@@ -218,15 +224,11 @@ body {
 
 .section__cards {
     background: #393636;
-    display: flex;
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
     padding: 15px 0;
-    margin-bottom: 50px;
+    margin: 50px 0;
 }
 
 .card {

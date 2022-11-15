@@ -1,0 +1,40 @@
+@media screen and (max-width:770px) {
+    .banner__desc {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .sh__wrap {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+@media screen and (max-width:460px) {
+    .fh__wrap {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .shmenu {
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .ulmenu {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+}
+
+
+@media screen and (max-width:460px) {
+    .fhmenu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
